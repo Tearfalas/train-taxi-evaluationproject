@@ -21,7 +21,7 @@ public class Tracks : MonoBehaviour
 
         traverser.transform.position = startJunction.transform.position + new Vector3(start_dir.x*4,1,start_dir.y*4);
 
-        traverser.transform.eulerAngles = new Vector3(0,Vector2.Angle(start_dir,new Vector2(0,1)),0);
+        traverser.transform.eulerAngles = new Vector3(0,Vector2.Angle(start_dir,new Vector2(0,-1)),0);
 
         startJunction.Activate();
 
@@ -58,7 +58,6 @@ public class Tracks : MonoBehaviour
 
 
     public void AddPathAndCombine(AbstractRoad junc,Traverser traverser,string picked_dir){
-        Debug.Log("addpathandcombine has run");
         float y_diff = traverser.gameObject.transform.position.z - junc.gameObject.transform.position.z;
         float x_diff = traverser.gameObject.transform.position.x - junc.gameObject.transform.position.x;
         string relative_dir = "";
@@ -373,7 +372,6 @@ public class Tracks : MonoBehaviour
                 }
                 
                 traverser.AddPath(temp.Value,opposite);
-                Debug.Log("adding a path");
                 break;
             }
 

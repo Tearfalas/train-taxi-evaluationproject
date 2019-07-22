@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1770920153716881006}
   - component: {fileID: 4659737056546107736}
-  - component: {fileID: 4695743407515713084}
   - component: {fileID: 2145182079017127753}
+  - component: {fileID: 6202100847156880590}
   m_Layer: 0
   m_Name: passenger_male
   m_TagString: passenger
@@ -46,20 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd7ba8aaa4aa6742b2194ee64fecbcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: 0
   speed: 6
---- !u!65 &4695743407515713084
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3371168242701239421}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8, y: 8, z: 8}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &2145182079017127753
 Animator:
   serializedVersion: 3
@@ -79,6 +67,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &6202100847156880590
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3371168242701239421}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 7
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9134567817326223840
 GameObject:
   m_ObjectHideFlags: 0

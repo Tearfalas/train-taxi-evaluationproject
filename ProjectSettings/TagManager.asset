@@ -13,6 +13,7 @@ TagManager:
   - road_rise_lower
   - road_rise_upper
   - road_upper
+  - floor
   layers:
   - Default
   - TransparentFX

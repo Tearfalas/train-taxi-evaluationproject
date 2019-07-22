@@ -4903,8 +4903,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1147537, y: 0.70773745, z: 1.5485554}
-  m_Center: {x: -0.029872894, y: 1.2527826, z: 1.9918642}
+  m_Size: {x: 2.1147537, y: 2.7144647, z: 2.1847725}
+  m_Center: {x: -0.029872894, y: 1.1672268, z: 2.3099728}
 --- !u!114 &4404896730113990714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4920,7 +4920,7 @@ MonoBehaviour:
   traverse_follower_prefab: {fileID: 1132740029476992814, guid: ca055ffcacf67b64ab6e31f05a04297a,
     type: 3}
   tracks: {fileID: 0}
-  speed: 40
+  speed: 55
   paused: 1
 --- !u!54 &8406922110056858635
 Rigidbody:

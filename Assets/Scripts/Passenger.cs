@@ -8,7 +8,7 @@ public class Passenger : MonoBehaviour
     private Traverser train_head;
 
 
-    private bool active = false;
+    public bool active = false;
 
     public bool is_active{
         get{
@@ -69,6 +69,9 @@ public class Passenger : MonoBehaviour
     public void Collect(){
         if(train_head == null){
             train_head = Manager.Instance.CurrentTraverser;
+        }
+        if(train_head == null){
+            return;
         }
         base_pos = transform.position;
         active = true;

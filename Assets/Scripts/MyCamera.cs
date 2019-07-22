@@ -9,7 +9,7 @@ public class MyCamera : MonoBehaviour
     public float initial_difference = 60f;
     void Start()
     {
-        EventManager.StartListening("CRASHED",Crashed);
+        EventManager.StartListening("WIN",Win);
     }
 
     // Update is called once per frame
@@ -18,8 +18,9 @@ public class MyCamera : MonoBehaviour
         transform.position = new Vector3(transform.position.x,transform.position.y,trainhead.transform.position.z - initial_difference);
     }
 
-
-    void Crashed(){
-        GetComponent<Animator>().SetBool("blurred",true);
+    void Win(){
+        transform.Find("particles").gameObject.SetActive(true);
     }
+
+
 }
